@@ -10,11 +10,36 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url(./bg.jpg);
+        color: #fff;
+      }
+      .navbar {
+        background-image: url(./bg.jpg);
+      }
+      .navbar-brand {
+        color: #fff;
+      }
+      .content {
+        color: #fff;
+      }
+      p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><span>Weather Application</span></a>
+        <a class="navbar-brand" href="#"
+          ><span><i class="ri-cloud-line"></i> Weather Application</span></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -50,7 +75,9 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm border-primary">
               <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Temperature Info</h4>
+                <h4 class="my-0 fw-normal">
+                  Temperature Info <i class="ri-celsius-line"></i>
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
@@ -70,7 +97,9 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm border-primary">
               <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Humidity Info</h4>
+                <h4 class="my-0 fw-normal">
+                  Humidity Info <i class="ri-water-percent-line"></i>
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
@@ -88,7 +117,9 @@
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm border-primary">
               <div class="card-header py-3 text-bg-primary border-primary">
-                <h4 class="my-0 fw-normal">Wind Info</h4>
+                <h4 class="my-0 fw-normal">
+                  Wind Info <i class="ri-windy-line"></i>
+                </h4>
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
@@ -104,33 +135,32 @@
             </div>
           </div>
         </div>
-
-        <h2 class="display-6 text-center mb-4">About Weather</h2>
-        <p style="font-size: 16px">
-          <strong>Temperature: </strong>Temperature is a measure of how hot or
-          cold the air is. It is typically measured in degrees Celsius (°C) or
-          Fahrenheit (°F). Daily temperature fluctuations are caused by the
-          amount of solar radiation received, time of day, and geographical
-          location. Temperature is a key factor in determining the type of
-          weather conditions we experience, such as hot and sunny days, or cold
-          and snowy ones.
-        </p>
-        <p style="font-size: 16px">
-          <strong>Humidity: </strong> Humidity refers to the amount of water
-          vapor present in the air. It is usually expressed as a percentage.
-          High humidity can make the air feel muggy, while low humidity can make
-          it feel dry. Humidity influences our comfort and can affect how hot or
-          cold the air feels. It also plays a role in the formation of clouds
-          and precipitation.
-        </p>
-        <p style="font-size: 16px">
-          <strong>Wind: </strong>Wind is the movement of air from areas of high
-          pressure to low pressure. Wind speed is measured in units like miles
-          per hour (mph) or kilometers per hour (km/h). Wind direction is given
-          in compass points (e.g., north, south, east, west). Wind influences
-          the distribution of temperature and moisture, and it can bring
-          different weather patterns.
-        </p>
+        <div class="content">
+          <h2 class="text-center style" style="color: black">About Weather</h2>
+          <p style="font-size: 14px">
+            <strong>Temperature: </strong>Temperature is a measure of how hot or
+            cold the air is. It is typically measured in degrees Celsius (°C) or
+            Fahrenheit (°F). Daily temperature fluctuations are caused by the
+            amount of solar radiation received, time of day, and geographical
+            location.
+          </p>
+          <p style="font-size: 14px">
+            <strong>Humidity: </strong> Humidity refers to the amount of water
+            vapor present in the air. It is usually expressed as a percentage.
+            High humidity can make the air feel muggy, while low humidity can
+            make it feel dry. Humidity influences our comfort and can affect how
+            hot or cold the air feels. It also plays a role in the formation of
+            clouds and precipitation.
+          </p>
+          <p style="font-size: 14px">
+            <strong>Wind: </strong>Wind is the movement of air from areas of
+            high pressure to low pressure. Wind speed is measured in units like
+            miles per hour (mph) or kilometers per hour (km/h). Wind direction
+            is given in compass points (e.g., north, south, east, west). Wind
+            influences the distribution of temperature and moisture, and it can
+            bring different weather patterns.
+          </p>
+        </div>
       </main>
     </div>
     <script
@@ -138,6 +168,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="weatherapplication.js"></script>
   </body>
 </html>
